@@ -1,6 +1,7 @@
 /* global style */
 body {
   font-family: 'Roboto', sans-serif;
+  background: #F5F5F5;
 }
 :root {
   --brand-color: #212121;
@@ -96,10 +97,15 @@ p {
 /* hero */
 
 .hero {
+  margin: 0 auto;
+  width: 1600px;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../goit-markup-hw-04/images/all-team.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/all-team.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .hero-section {
   font-weight: 900;
@@ -195,7 +201,8 @@ p {
 .team {
   background: #f5f4fa;
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 1600px;
 }
 .team-link {
   background: var(--next-color);
@@ -246,11 +253,88 @@ p {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-color);
-  padding-bottom: 30px;
   text-align: center;
 }
+.team .icons {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.team .social-link:hover,
+:focus {
+  background-color: #2196f3;
+}
 
+.icon-link {
+  fill: #afb1b8;
+}
+.team .social-link:hover .icon-link {
+  fill: #ffffff;
+}
+.social-icons {
+  justify-content: center;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team .icons:last-child {
+  margin-right: 0;
+}
+.alltime-clients {
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  margin: 0 auto;
+ 
+}
+ .under-clients{
+  width: 1200px;
+ margin: 0 auto;
+ }
+.alltime-clients-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.compain-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-logo{
+  margin: 16px 32px;
+  fill: #AFB1B8;
+}
+.compain-link:not(:last-child) {
+  margin-right: 25px;
+}
+.compain-link:hover,:focus .icon-logo{
+  border: 1px solid #2196f3;
+}
+.icon-logo:hover,:focus {
+  fill: #2196f3;
+}
 /* footer */
+
 .footer {
   padding-bottom: 60px;
 }
@@ -258,6 +342,8 @@ p {
   padding-top: 60px;
   background-color: #2f303a;
   padding-bottom: 60px;
+  margin: 0 auto;
+  width: 1600px;
 }
 .address-link-link {
   font-weight: 400;
@@ -421,6 +507,8 @@ p {
 /* address */
 .footer {
   background-color: #2f303a;
+  margin: 0 auto;
+  width: 1600px;
 }
 .adres-link {
   font-weight: 400;
